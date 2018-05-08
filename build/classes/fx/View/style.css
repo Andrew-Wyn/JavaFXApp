@@ -1,0 +1,12 @@
+.button{
+    -fx-background-color: #aaf;
+}
+
+#header{
+    -fx-background-color: #aaf;
+    z-index: 999;
+}
+
+#title{
+    -fx-text-fill: bold;    
+}
