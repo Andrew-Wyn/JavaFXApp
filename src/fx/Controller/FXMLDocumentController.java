@@ -111,6 +111,7 @@ public class FXMLDocumentController implements Initializable {
         });
         burgerTask = new HamburgerSlideCloseTransition(hamb);
         burgerTask.setRate(-1);
+        th.start();
     }    
     
     @FXML
@@ -174,7 +175,6 @@ public class FXMLDocumentController implements Initializable {
         
         //inizio computazione
         long tStart = System.currentTimeMillis();
-        th.start();
         //GO
         Vector v = th.go(data, key);
         //provo a fare un join sul thread ma non va!
